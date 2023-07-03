@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:visibility="gone"
+        android:translationZ="100sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fedbdc">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="65sp"
+            android:src="@drawable/banner1">
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv_instamart"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:padding="10sp"
+                android:background="#fedbdc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_alignParentStart="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="5sp"
+                            android:layout_width="20sp"
+                            android:layout_height="20sp"
+                            android:src="@drawable/icon_location">
+                        </ImageView>
+
+                        <TextView
+                            android:textSize="18sp"
+                            android:paddingTop="5sp"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/swiggy_font_medium"
+                            android:text="Home">
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/swiggy_font_light"
+                        android:text="1/422E, Kulattur, Chennai, Tamil Nadu">
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <ImageView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:src="@drawable/profile_dp_colored">
+                    </ImageView>
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="#fedbdc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    app:cardCornerRadius="8sp"
+                    android:layout_margin="10sp"
+                    app:strokeColor="#f1f1f4"
+                    android:elevation="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:padding="10sp"
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_search"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textSize="16sp"
+                            android:textColor="@color/grey"
+                            android:fontFamily="@font/swiggy_font_regular"
+                            android:text="Search for ">
+                        </TextView>
+
+                        <TextSwitcher
+                            android:id="@+id/textSwitcher"
+                            android:layout_toEndOf="@id/tv_search"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey"
+                            android:ellipsize="end"
+                            android:inAnimation="@anim/text_slide_to_top"
+                            android:outAnimation="@anim/text_slide_from_bottom"
+                            android:fontFamily="@font/swiggy_font_regular" />
+
+                        <ImageView
+                            android:layout_toStartOf="@id/iv_mic"
+                            android:layout_marginEnd="10sp"
+                            android:layout_width="20sp"
+                            android:layout_height="20sp"
+                            android:src="@drawable/icon_search">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/iv_mic"
+                            android:layout_alignParentEnd="true"
+                            android:layout_width="20sp"
+                            android:layout_height="20sp"
+                            android:src="@drawable/icon_mic">
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_banner"
+                android:background="#fedbdc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="65sp"
+                    android:src="@drawable/banner1">
+                </ImageView>
+
+            </LinearLayout>
+
+            <ImageView
+                android:paddingTop="10sp"
+                android:layout_gravity="center"
+                android:layout_width="100sp"
+                android:layout_height="50sp"
+                android:src="@drawable/img_offerzone">
+            </ImageView>
+
+            <LinearLayout
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="200sp">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewpager1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="80dp"
+                    android:paddingEnd="80dp">
+                </androidx.viewpager2.widget.ViewPager2>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="18sp"
+                android:src="@drawable/img_graboffer">
+            </ImageView>
+
+            <LinearLayout
+                android:paddingTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:paddingStart="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/swiggy_font_extrabold"
+                    android:textSize="18sp"
+                    android:text="Hot Deals!">
+                </TextView>
+
+                <TextView
+                    android:paddingStart="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/swiggy_font_light"
+                    android:textColor="@color/black"
+                    android:text="Grab upto 30% off, exclusively for you"
+                    android:maxLines="1"
+                    android:ellipsize="end">
+                </TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_hotdeals"
+                    android:layout_marginTop="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:paddingStart="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/swiggy_font_extrabold"
+                    android:textSize="18sp"
+                    android:text="All Categories">
+                </TextView>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="650sp"
+                    android:src="@drawable/instamart_all">
+                </ImageView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:paddingTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:paddingStart="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/swiggy_font_extrabold"
+                    android:textSize="18sp"
+                    android:text="Brand with a buzz!">
+                </TextView>
+
+
+                <ImageView
+                    android:layout_marginTop="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="350sp"
+                    android:src="@drawable/img_brand">
+                </ImageView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="20sp"
+                android:paddingTop="20sp"
+                android:paddingBottom="20sp"
+                android:background="#f1f1f4"
+                android:layout_width="match_parent"
+                android:layout_height="280sp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:paddingStart="15sp"
+                    android:paddingEnd="15sp"
+                    android:paddingBottom="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@color/grey"></View>
+
+                    <TextView
+                        android:letterSpacing="0.2"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_grey"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/swiggy_font_extrabold"
+                        android:text="SNACKS &amp; DRINKS">
+                    </TextView>
+
+                    <View
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="1sp"
+                        android:layout_weight="1"
+                        android:background="@color/grey">
+                    </View>
+
+                </LinearLayout>
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewpager2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="80dp"
+                    android:paddingEnd="80dp">
+                </androidx.viewpager2.widget.ViewPager2>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="20sp"
+                android:paddingBottom="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:paddingStart="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/swiggy_font_extrabold"
+                    android:textSize="18sp"
+                    android:text="Top picks for you">
+                </TextView>
+
+                <TextView
+                    android:paddingStart="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/swiggy_font_light"
+                    android:textColor="@color/black"
+                    android:text="Based on what's popular around you"
+                    android:maxLines="1"
+                    android:ellipsize="end">
+                </TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_top_picks"
+                    android:layout_marginTop="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="30sp"
+                android:background="#f1f1f4"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_hotel_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/swiggy_font_light"
+                    android:text="Thats all for now! :)"
+                    android:maxLines="1"
+                    android:ellipsize="end">
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

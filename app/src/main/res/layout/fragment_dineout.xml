@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.DineoutFragment"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sv_dineout"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_header"
+                android:padding="15sp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="5sp"
+                            android:layout_width="20sp"
+                            android:layout_height="20sp"
+                            android:src="@drawable/icon_location">
+                        </ImageView>
+
+                        <TextView
+                            android:textSize="18sp"
+                            android:paddingTop="5sp"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/swiggy_font_medium"
+                            android:text="Home">
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/swiggy_font_light"
+                        android:text="Chennai, Tamil Nadu">
+                    </TextView>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_median"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:background="@color/black"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_dineout_hero"
+                android:layout_width="match_parent"
+                android:layout_height="345sp"
+                android:src="@drawable/dineout_img_hero">
+            </ImageView>
+
+            <ImageView
+                android:layout_below="@id/iv_dineout_hero"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="350sp"
+                android:src="@drawable/dineout_img_body">
+            </ImageView>
+
+            <LinearLayout
+                android:paddingBottom="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:paddingStart="10sp"
+                    android:paddingEnd="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Best offers near you"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/swiggy_font_extrabold"
+                        android:textSize="18sp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="SEE ALL"
+                        android:textColor="@color/swiggy_orange"
+                        android:fontFamily="@font/swiggy_font_medium"
+                        android:textSize="14sp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10sp"
+                    android:text="Restaurants to hang out in your area"
+                    android:fontFamily="@font/swiggy_font_regular"
+                    android:textSize="14sp">
+                </TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_bestoffers"
+                    android:paddingTop="15sp"
+                    android:paddingBottom="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="20sp"
+                android:paddingBottom="30sp"
+                android:background="#f1f1f4"
+                android:layout_width="match_parent"
+                android:layout_height="300sp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:paddingStart="15sp"
+                    android:paddingEnd="15sp"
+                    android:paddingBottom="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@color/grey"></View>
+
+                    <TextView
+                        android:letterSpacing="0.2"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_grey"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/swiggy_font_extrabold"
+                        android:text="HOTELS &amp; OFFERS">
+                    </TextView>
+
+                    <View
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="1sp"
+                        android:layout_weight="1"
+                        android:background="@color/grey">
+                    </View>
+
+                </LinearLayout>
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/dineout_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="80dp"
+                    android:paddingEnd="80dp">
+                </androidx.viewpager2.widget.ViewPager2>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15sp"
+                android:paddingBottom="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:padding="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="More resturants around you"
+                    android:fontFamily="@font/swiggy_font_extrabold"
+                    android:textSize="18sp">
+                </TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_morearoundyou"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="30sp"
+                android:background="#f1f1f4"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_hotel_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/swiggy_font_light"
+                    android:text="Thats all for now! :)"
+                    android:maxLines="1"
+                    android:ellipsize="end">
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_searchbar"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:elevation="100sp"
+        android:background="@color/white"
+        android:padding="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center"
+            android:paddingBottom="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginEnd="5sp"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:src="@drawable/icon_location">
+            </ImageView>
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/swiggy_font_medium"
+                android:text="Home, ">
+            </TextView>
+
+            <TextView
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/swiggy_font_light"
+                android:text="Chennai, Tamil Nadu">
+            </TextView>
+
+        </LinearLayout>
+        <com.google.android.material.card.MaterialCardView
+            android:translationZ="1000sp"
+            android:id="@+id/cv_searchbar"
+            app:cardCornerRadius="8sp"
+            app:strokeColor="#f1f1f4"
+            android:elevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="10sp"
+                android:background="#f1f1f4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_search"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textSize="16sp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/swiggy_font_regular"
+                    android:text="Search for ">
+                </TextView>
+
+                <TextSwitcher
+                    android:id="@+id/textSwitcher"
+                    android:layout_toEndOf="@id/tv_search"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:ellipsize="end"
+                    android:inAnimation="@anim/text_slide_to_top"
+                    android:outAnimation="@anim/text_slide_from_bottom"
+                    android:fontFamily="@font/swiggy_font_regular" />
+
+                <ImageView
+                    android:layout_toStartOf="@id/iv_mic"
+                    android:layout_marginEnd="10sp"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:src="@drawable/icon_search">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/iv_mic"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:src="@drawable/icon_mic">
+                </ImageView>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

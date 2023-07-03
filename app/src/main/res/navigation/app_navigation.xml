@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.swiggycloneapp.view.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/foodFragment"
+        android:name="com.example.swiggycloneapp.view.FoodFragment"
+        android:label="fragment_food"
+        tools:layout="@layout/fragment_food" />
+    <fragment
+        android:id="@+id/instamartFragment"
+        android:name="com.example.swiggycloneapp.view.InstamartFragment"
+        android:label="fragment_instamart"
+        tools:layout="@layout/fragment_instamart" />
+    <fragment
+        android:id="@+id/dineoutFragment"
+        android:name="com.example.swiggycloneapp.view.DineoutFragment"
+        android:label="fragment_dineout"
+        tools:layout="@layout/fragment_dineout" />
+    <fragment
+        android:id="@+id/genieFragment"
+        android:name="com.example.swiggycloneapp.view.GenieFragment"
+        android:label="fragment_genie"
+        tools:layout="@layout/fragment_genie" />
+</navigation>

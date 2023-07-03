@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingStart="10sp"
+    android:paddingEnd="10sp"
+    android:paddingBottom="25sp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_hotel"
+        android:src="@drawable/dineout_hori_1"
+        android:layout_width="match_parent"
+        android:layout_height="320sp">
+    </ImageView>
+
+    <RelativeLayout
+        android:paddingStart="5sp"
+        android:paddingEnd="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_hotel_name"
+            android:layout_alignParentStart="true"
+            android:paddingTop="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="Salem RR Briyani"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/swiggy_font_medium"
+            android:maxLines="1"
+            android:ellipsize="end">
+        </TextView>
+
+        <LinearLayout
+            android:layout_alignParentEnd="true"
+            android:gravity="start"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="⭐">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_hotel_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3sp"
+                android:paddingRight="3sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="4.6">
+            </TextView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingStart="5sp"
+        android:paddingEnd="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_hotel_location"
+            android:layout_alignParentStart="true"
+            android:paddingTop="5sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@color/black"
+            android:text="Medavakkam"
+            android:textSize="14sp"
+            android:fontFamily="@font/swiggy_font_light"
+            android:maxLines="1"
+            android:ellipsize="end">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_hotel_distance"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="5sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@color/black"
+            android:text="2.8 km"
+            android:textSize="14sp"
+            android:fontFamily="@font/swiggy_font_light"
+            android:maxLines="1"
+            android:ellipsize="end">
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingStart="5sp"
+        android:paddingEnd="5sp"
+        android:paddingTop="2sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_hotel_type"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@color/grey"
+            android:text="Chinese, North Indian"
+            android:textSize="14sp"
+            android:fontFamily="@font/swiggy_font_light"
+            android:maxLines="1"
+            android:ellipsize="end">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_hotel_price"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@color/grey"
+            android:text="1000 for two"
+            android:textSize="14sp"
+            android:fontFamily="@font/swiggy_font_light"
+            android:maxLines="1"
+            android:ellipsize="end">
+        </TextView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

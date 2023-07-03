@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_marginStart="10sp"
+    android:layout_marginEnd="10sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_product_image"
+        android:layout_width="150sp"
+        android:layout_height="110sp"
+        android:src="@drawable/instamart_hori_1">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/product_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Britannia"
+        android:textColor="@color/grey"
+        android:fontFamily="@font/swiggy_font_regular">
+    </TextView>
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="16sp"
+        android:text="Brown Bread"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/swiggy_font_regular">
+    </TextView>
+
+    <TextView
+        android:id="@+id/product_name_tamil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="14sp"
+        android:text="(Vaazhaipalam)"
+        android:textColor="@color/black"
+        android:fontFamily="@font/swiggy_font_regular">
+    </TextView>
+
+    <TextView
+        android:id="@+id/product_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="2 kg"
+        android:textColor="@color/grey"
+        android:fontFamily="@font/swiggy_font_regular">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_orgprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:fontFamily="@font/swiggy_font_light"
+                android:text="35">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_disprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:fontFamily="@font/swiggy_font_regular"
+                android:text="35">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                app:cardCornerRadius="5sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:padding="5sp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADD"
+                    android:textColor="#1ca571"
+                    android:textStyle="bold">
+                </TextView>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

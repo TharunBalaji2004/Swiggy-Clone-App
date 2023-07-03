@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginBottom="15sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        app:cardCornerRadius="12sp"
+        app:strokeWidth="0sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_food"
+            android:layout_width="160sp"
+            android:layout_height="160sp"
+            android:src="@drawable/verti_img_1">
+        </ImageView>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:paddingTop="8sp"
+        android:paddingBottom="8sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_hotel_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="Salem RR Briyani"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="@font/swiggy_font_medium"
+            android:maxLines="1"
+            android:ellipsize="end">
+        </TextView>
+
+        <LinearLayout
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/swiggy_font_medium"
+                android:text="⭐">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3sp"
+                android:paddingRight="3sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/swiggy_font_medium"
+                android:textSize="16sp"
+                android:text="3.8">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/swiggy_font_medium"
+                android:textSize="16sp"
+                android:text="•">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3sp"
+                android:paddingRight="3sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/swiggy_font_medium"
+                android:textSize="16sp"
+                android:text="20 mins">
+            </TextView>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/swiggy_font_light"
+            android:text="Briyani, Pizza"
+            android:maxLines="1"
+            android:ellipsize="end">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_hotel_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/swiggy_font_light"
+            android:text="Medavakkam, 3.0 km"
+            android:maxLines="1"
+            android:ellipsize="end">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_offer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_extra10">
+        </ImageView>
+
+    </LinearLayout>
+
+</LinearLayout>

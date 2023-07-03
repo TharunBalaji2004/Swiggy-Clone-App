@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".view.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:padding="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5sp"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:src="@drawable/icon_location">
+                </ImageView>
+
+                <TextView
+                    android:textSize="18sp"
+                    android:paddingTop="5sp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/swiggy_font_medium"
+                    android:text="Home">
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:fontFamily="@font/swiggy_font_light"
+                android:text="1/422E, Kulattur, Chennai, Tamil Nadu">
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <ImageView
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:src="@drawable/profile_dp_colored">
+            </ImageView>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_searchbar"
+        app:cardCornerRadius="8sp"
+        android:layout_margin="10sp"
+        app:strokeColor="#f1f1f4"
+        android:elevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="10sp"
+            android:background="#f1f1f4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:textColor="@color/grey"
+                android:fontFamily="@font/swiggy_font_regular"
+                android:text="Search for ">
+            </TextView>
+
+            <TextSwitcher
+                android:id="@+id/textSwitcher"
+                android:layout_toEndOf="@id/tv_search"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:ellipsize="end"
+                android:inAnimation="@anim/text_slide_to_top"
+                android:outAnimation="@anim/text_slide_from_bottom"
+                android:fontFamily="@font/swiggy_font_regular" />
+
+            <ImageView
+                android:layout_toStartOf="@id/iv_mic"
+                android:layout_marginEnd="10sp"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/icon_search">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/iv_mic"
+                android:layout_alignParentEnd="true"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/icon_mic">
+            </ImageView>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ScrollView
+        android:id="@+id/sv_home"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_body"
+                android:layout_marginTop="20sp"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight="0.25"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80sp"
+                        android:src="@drawable/homeimage1">
+                    </ImageView>
+
+                    <TextView
+                        android:paddingTop="5sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/swiggy_font_medium"
+                        android:text="Food"
+                        android:textStyle="bold">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="0.25"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80sp"
+                        android:src="@drawable/homeimage2">
+                    </ImageView>
+                    <TextView
+                        android:paddingTop="5sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Instamart"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/swiggy_font_medium">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="0.25"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80sp"
+                        android:src="@drawable/homeimage3">
+                    </ImageView>
+                    <TextView
+                        android:paddingTop="5sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Dineout"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/swiggy_font_medium">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="0.25"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80sp"
+                        android:src="@drawable/homeimage4">
+                    </ImageView>
+                    <TextView
+                        android:paddingTop="5sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Genie"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/swiggy_font_medium">
+                    </TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="200sp">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewpager2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="80dp"
+                    android:paddingEnd="80dp">
+                </androidx.viewpager2.widget.ViewPager2>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="10sp"
+                android:background="#f1f1f4"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:padding="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@color/grey"></View>
+
+                    <TextView
+                        android:letterSpacing="0.2"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_grey"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/swiggy_font_extrabold"
+                        android:text="DISCOVER SWIGGY">
+                    </TextView>
+
+                    <View
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="1sp"
+                        android:layout_weight="1"
+                        android:background="@color/grey">
+                    </View>
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:paddingTop="20sp"
+                    android:paddingBottom="20sp"
+                    android:elevation="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="520sp"
+                    android:src="@drawable/homead1">
+                </ImageView>
+
+                <ImageView
+                    android:paddingTop="20sp"
+                    android:paddingBottom="20sp"
+                    android:elevation="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="520sp"
+                    android:src="@drawable/homead2">
+                </ImageView>
+
+                <ImageView
+                    android:paddingTop="20sp"
+                    android:paddingBottom="20sp"
+                    android:elevation="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="520sp"
+                    android:src="@drawable/homead3">
+                </ImageView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="70sp"
+                android:paddingBottom="70sp"
+                android:paddingStart="30sp"
+                android:paddingEnd="30sp"
+                android:background="#f1f1f4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Live \nit up!"
+                    android:fontFamily="@font/swiggy_font_extrabold"
+                    android:textSize="80sp"
+                    android:textColor="@color/grey">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crafted with ❤️ by Tharun Balaji"
+                    android:fontFamily="@font/swiggy_font_light"
+                    android:textSize="20sp"
+                    android:textColor="@color/grey">
+                </TextView>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
